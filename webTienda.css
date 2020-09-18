@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(206, 205, 205);
+}
+
+ 
+#card1
+{
+    position: absolute;
+    left: 5%;
+    border: 2px solid;
+    border-color: rgb(167, 165, 165);
+}
+
+#card2
+{
+    position: absolute;
+    left: 37%;
+    border: 2px solid;
+    border-color: rgb(167, 165, 165);
+
+
+}
+#card3
+{
+    
+    position: absolute;
+    left: 70%;
+    border: 2px solid;
+    border-color: rgb(167, 165, 165);
+}
+
+#carrito
+{
+    margin-top: 600px;
+    border: 2px solid;
+    border-color: rgb(167, 165, 165);
+    margin-left: 5%;
+
+}
+
