@@ -29,12 +29,19 @@ body{
     border-color: rgb(167, 165, 165);
 }
 
-#carrito
+.carrito
 {
     margin-top: 600px;
     border: 2px solid;
     border-color: rgb(167, 165, 165);
     margin-left: 5%;
 
+}
+
+
+.row1
+{
+    margin-left: 25%;
+    margin-top: -160px;
 }
 

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="webTienda.js"></script>
-    
     <link rel="stylesheet" href="webTienda.css">
     <title>webTienda</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -52,9 +52,9 @@
         <img class="card-img-top" src="zapatos.jpg">
         <div class="card-body">
           <h5 class="card-title">Zapatos</h5>
-          <p class="card-text">Estos te quedarán de puta madre.</p>
+          
           <p class="card-text">50,00€</p>
-          <a href="#" class="btn btn-dark" onclick="prendasCarrito('Zapatos',1,50.00)">Comprar</a>
+          <a href="#" class="btn btn-dark addToCart" onclick="prendasCarrito('Zapatos',1,50.00)">Comprar</a>
         </div>
       </div>
 
@@ -62,9 +62,8 @@
         <img class="card-img-top" src="pantalones.jpg" style="height: 350px;">
         <div class="card-body">
           <h5 class="card-title">Pantalones</h5>
-          <p class="card-text">Te harán un culito invidiable.</p>
           <p class="card-text">30,00€</p>
-          <a href="#" class="btn btn-dark" onclick="prendasCarrito('Pantalones', 1, 30.00)">Comprar</a>
+          <a href="#" class="btn btn-dark addToCart" onclick="prendasCarrito('Pantalones', 1, 30.00)">Comprar</a>
         </div>
       </div>
 
@@ -72,27 +71,28 @@
         <img class="card-img-top" src="mascarillas.jpg">
         <div class="card-body">
           <h5 class="card-title">Mascarillas</h5>
-          <p class="card-text">Así se verá menos lo fe@ que eres.</p>
+          
           <p class="card-text">15,00€</p>
-          <a href="#" class="btn btn-dark" onclick="prendasCarrito('Mascarillas', 1, 15.00)">Comprar</a>
+          <a href="#" class="btn btn-dark addToCart" onclick="prendasCarrito('Mascarillas', 1, 15.00)">Comprar</a>
         </div>
       </div>
     </div>
 
        
     
-    <div id="carrito" style="width: 18rem;">
+    <div class="carrito" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Carrito</h5>
         <p class="card-text" id="mostrarCarrito"></p>
-        <p class="card-text"></p>
+        <p class="text-right">Total: <span id="total"></span>&euro;</p>
         <a href="#" class="btn btn-dark" onclick="mostrarCarrito()">Mostrar Carrito</a>
       </div>
     </div>
-      
-      
 
-      
-    
+    <div class="row1">
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+  </div> 
+  
 </body>
 </html>
